@@ -38,13 +38,12 @@ def main(argv):
 		reader2=csv.reader(csv3)
 	
 	for line in reader:
-			for row in reader2:
-			if(line[1] == row[5]):
-				line.append(row[13])
-				line.append(row[14])
-				line.append(row[15])
-				writer.writerow(line)
-	csv1.close()
+		for row in reader2:
+		if(line[1] == row[5]):
+			line.append(row[13])
+			line.append(row[14])
+			line.append(row[15])
+			writer.writerow(line)
 	csv2.flush()
 	csv2.close()
 	csv3.close()
